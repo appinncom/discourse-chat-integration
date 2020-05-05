@@ -33,7 +33,7 @@ describe 'Telegram Command Controller', type: :request do
       SiteSetting.chat_integration_telegram_enabled = true
     end
 
-    let!(:stub) { stub_request(:post, 'https://api.telegram.org/botTOKEN/sendMessage').to_return(body: "{\"ok\":true}") }
+    let!(:stub) { stub_request(:post, 'https://tapi.appinn.net/botTOKEN/sendMessage').to_return(body: "{\"ok\":true}") }
 
     describe 'when forum is private' do
       it 'should not redirect to login page' do

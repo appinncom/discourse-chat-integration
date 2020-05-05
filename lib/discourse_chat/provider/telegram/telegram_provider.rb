@@ -33,12 +33,12 @@ module DiscourseChat
       end
 
       def self.do_api_request(methodName, message)
-        http = Net::HTTP.new("api.telegram.org", 443)
+        http = Net::HTTP.new("tapi.appinn.net", 443)
         http.use_ssl = true
 
         access_token = SiteSetting.chat_integration_telegram_access_token
 
-        uri = URI("https://api.telegram.org/bot#{access_token}/#{methodName}")
+        uri = URI("https://tapi.appinn.net/bot#{access_token}/#{methodName}")
 
         req = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json')
         req.body = message.to_json
