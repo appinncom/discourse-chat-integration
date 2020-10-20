@@ -8,7 +8,7 @@ module DiscourseChat
 
       CHANNEL_PARAMETERS = [
         { key: "name", regex: '^\S+' },
-        { key: "webhook_url", regex: '^https:\/\/discordapp\.com\/api\/webhooks\/', unique: true, hidden: true }
+        { key: "webhook_url", regex: '^https:\/\/discord(?:app)?\.com\/api\/webhooks\/', unique: true, hidden: true }
       ].freeze
 
       def self.send_message(url, message)
@@ -63,7 +63,7 @@ module DiscourseChat
         message
       end
 
-      def self.trigger_notification(post, channel)
+      def self.trigger_notification(post, channel, rule)
         # Adding ?wait=true means that we actually get a success/failure response, rather than returning asynchronously
         webhook_url = "#{channel.data['webhook_url']}?wait=true"
         message = generate_discord_message(post)

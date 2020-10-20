@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 hy:
   js:
@@ -17,8 +16,6 @@ hy:
       no_providers: "Դուք պետք է միացնեք որոշ մատակարարների պլագինի կարգավորումներում"
       channels_with_errors: "Այս մատակարարի որոշ ալիքներ ձախողվել են վերջին անգամ հաղորդագրությունները ուղարկելիս: Սեղմեք սխալի պատկերակ(ներ)ին՝ ավելին իմանալու համար:"
       channel_exception: "Վերջին անգամ այս ալիքին հաղորդագրություն ուղարկելիս տեղի է ունեցել անհայտ սխալ:"
-      group_mention_template: "Հետևյալի նշումները՝ @{{name}}"
-      group_message_template: "Հաղորդագրություն դեպի՝ @{{name}}"
       choose_group: "(ընտրեք խումբ)"
       all_categories: "(բոլոր կատեգորիաները)"
       all_tags: "(բոլոր թեգերը)"
@@ -104,7 +101,7 @@ hy:
               help: "Անուն ալիքը նկարագրելու համար: Այն չի օգտագործվում Discord-ին միանալու համար: "
             webhook_url:
               title: Webhook -ի URL
-              help: 'Ձեր Discord սերվերի կարգավորումներում ստեղծված webhook -ի URL -ը '
+              help: Ձեր Discord սերվերի կարգավորումներում ստեղծված webhook -ի URL -ը
         mattermost:
           title: "Mattermost"
           param:

@@ -78,6 +78,20 @@ en:
     chat_integration_flowdock_enabled: "Enable the Flowdock chat integration provider"
     chat_integration_flowdock_excerpt_length: "Flowdock post excerpt length"
 
+    #######################################
+    ########## GROUPME SETTINGS ##########
+    #######################################
+    chat_integration_groupme_enabled: "Enable the Groupme chat integration provider"
+    chat_integration_groupme_excerpt_length: "Groupme post excerpt length"
+    chat_integration_groupme_bot_ids: "*required* Bot IDs, seperated by ',' if there are multiple"
+    chat_integration_groupme_instance_names: " *required* Name of the GroupMe chat, seperated by ',' if there are multiple (same order as Bot IDs)"
+
+    ###########################################
+    ######## MICROSOFT TEAMS SETTINGS #########
+    ###########################################
+    chat_integration_teams_enabled: "Enable the Microsoft Teams chat integration provider"
+    chat_integration_teams_excerpt_length: "Microsoft Team post excerpt length"
+
   chat_integration:
 
     all_categories: "(all categories)"
@@ -114,8 +128,9 @@ en:
           tag: "The *%{name}* tag cannot be found."
           category: "The *%{name}* category cannot be found. Available categories: *%{list}*"
         help: |
-          *New rule:* `/discourse [watch|follow|mute] [category] [tag:name]`
+          *New rule:* `/discourse [thread|watch|follow|mute] [category] [tag:name]`
           (you must specify a rule type and at least one category or tag)
+          - *thread* – notify this channel for new topics, thread replies if possible
           - *watch* – notify this channel for new topics and new replies
           - *follow* – notify this channel for new topics
           - *mute* – block notifications to this channel
@@ -251,4 +266,11 @@ en:
       ########### FLOWDOCK STRINGS ##########
       #######################################
       flowdock:
+        message_title: "posted"
+
+
+      #######################################
+      ########### GROUPME STRINGS ##########
+      #######################################
+      groupme:
         message_title: "posted"

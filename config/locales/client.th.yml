@@ -1,14 +1,14 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 th:
   js:
     chat_integration:
       settings: "การตั้งค่า"
+      all_categories: "(หมวดหมู่ทั้งหมด)"
       delete_channel: "ลบ"
       edit_channel: "แก้ไข"
       test_modal:

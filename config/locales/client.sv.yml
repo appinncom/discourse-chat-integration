@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 sv:
   js:
@@ -17,8 +16,8 @@ sv:
       no_providers: "Du måste aktivera vissa leverantörer i tilläggsinställningarna"
       channels_with_errors: "Vissa kanaler för denna leverantör misslyckades förra gången meddelanden skickades. Klicka på felikonen/-erna för att få veta mer."
       channel_exception: "Det uppstod ett okänt fel när ett meddelande senast skickades till den här kanalen."
-      group_mention_template: "Omnämnanden av: @{{name}}"
-      group_message_template: "Meddelanden till: @{{name}}"
+      group_mention_template: "Omnämnanden av: @%{name}"
+      group_message_template: "Meddelanden till: @%{name}"
       choose_group: "(välj en grupp)"
       all_categories: "(alla kategorier)"
       all_tags: "(alla taggar)"
@@ -43,6 +42,7 @@ sv:
         mute: 'Tysta'
         follow: 'Endast första inlägget'
         watch: 'Alla inlägg och svar'
+        thread: 'Alla inlägg med trådade svar'
       rule_table:
         filter: "Filter"
         category: "Kategori"
@@ -121,7 +121,7 @@ sv:
               help: "Ett namn som beskriver kanalen. Det används inte för anslutningen till Matrix."
             room_id:
               title: "Rums-ID"
-              help: "Den 'privata identifieraren' för rummet. Det borde vara något i stil med !abcdefg:matrix.org"
+              help: "Den 'privata identifieraren' för rummet. Den borde vara något i stil med !abcdefg:matrix.org"
           errors:
             unknown_token: "Åtkomstbevis är ogiltigt"
             unknown_room: "Rums-ID är ogiltigt"
@@ -159,3 +159,23 @@ sv:
             flow_token:
               title: "Flödesbevis"
               help: "Flödesbeviset som tillhandahålls efter att du har skapat en källa för ett flöde till vilket du vill skicka meddelanden."
+        groupme:
+          title: "GroupMe"
+          param:
+            groupme_instance_name:
+              title: "GroupMe-instansnamn"
+              help: "namn på Groupme-instans som visas i listan i webbplatsinställningar. använd 'all' för att skicka till alla instanser"
+          errors:
+            not_found: "Adressen du försökte skicka ditt meddelande till hittades inte. Kontrollera Bot-ID i webbplatsinställningar."
+            instance_names_issue: "instansnamn felaktigt formaterade eller är inte angivna"
+        teams:
+          title: "Microsoft Teams"
+          param:
+            name:
+              title: "Namn"
+              help: "Ett kanalnamn för Teams, t.ex. Discourse"
+            webhook_url:
+              title: "Webhook-URL"
+              help: "URL som tillhandahålls när du skapar en ny inkommande webhook"
+          errors:
+            invalid_channel: "Den kanalen finns inte hos Microsoft Teams"

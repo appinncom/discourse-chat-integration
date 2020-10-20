@@ -8,7 +8,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
   @on("init")
   setupKeydown() {
     Ember.run.schedule("afterRender", () => {
-      $("#chat-integration-edit-channel-modal").keydown(e => {
+      $("#chat-integration-edit-channel-modal").keydown((e) => {
         if (e.keyCode === 13) {
           this.send("save");
         }
@@ -23,12 +23,14 @@ export default Ember.Controller.extend(ModalFunctionality, {
 
   actions: {
     save(rule) {
-      if (this.get("saveDisabled")) return;
+      if (this.get("saveDisabled")) {
+        return;
+      }
 
       rule
         .save()
         .then(() => this.send("closeModal"))
         .catch(popupAjaxError);
-    }
-  }
+    },
+  },
 });

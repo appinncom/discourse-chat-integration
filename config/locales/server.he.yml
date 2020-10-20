@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 he:
   site_settings:
@@ -47,6 +46,10 @@ he:
     chat_integration_gitter_enabled: "הפעלת ספק שילוב הצ׳אט עם Gitter"
     chat_integration_flowdock_enabled: "הפעלת ספק שילוב הצ׳אט עם Flowdock"
     chat_integration_flowdock_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Flowdock"
+    chat_integration_groupme_enabled: "הפעלת ספק שילוב הצ׳אט עם Groupme"
+    chat_integration_groupme_excerpt_length: "אורך מהפוסט שמופיע בתקציר ב־Groupme"
+    chat_integration_groupme_bot_ids: "*נדרש* מזהי הבוטים, מופרדים ב־, אם יש כמה כאלה"
+    chat_integration_groupme_instance_names: "*נדרש* שמות הצ׳אטים ב־GroupMe, מופרדים ב־, אם יש כמה כאלה (באותו הסדר כמו מזהי הבוטים)"
   chat_integration:
     all_categories: "(כל הקטגוריות)"
     deleted_category: "(קטגוריה שנמחקה)"
@@ -75,8 +78,9 @@ he:
           tag: "לא ניתן למצוא את התגית *%{name}*."
           category: "לא ניתן למצוא את הקטגוריה *%{name}*. קטגוריות זמינות: *%{list}*"
         help: |
-          *כלל חדש:* ‪`‎/discourse [watch|follow|mute] [קטגוריה] [tag:שם]`
+          *כלל חדש:* ‪`‎/discourse [thread|watch|follow|mute] [קטגוריה] [tag:שם]`
           (עליך לציין סוג כלל ולפחות קטגוריה או תגית אחת)
+          - *thread* – להודיע לערוץ הזה אם יש נושאים חדשים, תגובות לשרשור אם ניתן
           - *watch* – להודיע לערוץ הזה אם יש נושאים חדשים או תגובות חדשות
           - *follow* – להודיע לערוץ הזה אם יש נושאים חדשים
           - *mute* – חסימת התראות לערוץ זה
@@ -187,4 +191,6 @@ he:
           %{excerpt}
           ~~~
       flowdock:
+        message_title: "פורסם"
+      groupme:
         message_title: "פורסם"

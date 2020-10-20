@@ -1,4 +1,6 @@
-export default Discourse.Route.extend({
+import DiscourseRoute from "discourse/routes/discourse";
+
+export default DiscourseRoute.extend({
   afterModel(model) {
     if (model.totalRows > 0) {
       this.transitionTo(
@@ -6,5 +8,5 @@ export default Discourse.Route.extend({
         model.get("firstObject").name
       );
     }
-  }
+  },
 });

@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 sw:
   site_settings:
@@ -51,23 +50,6 @@ sw:
         not_found:
           tag: " *%{name}* nembo haijapatikana"
           category: "*%{name}* kikundi hakipatikani. Vikundi vilivyopo ni: *%{list}*"
-        help: |
-          *Kanuni Mpya:* `/discourse [angalia|fuatilia|nyamazisha] [kategoria] [lebo: jina]`
-          (lazima uchague aina ya kanuni na kategoria moja au lebo)
-          - *angalia* - ijulishe chaneli hii kuhusu mada mpya na majibu mapya
-          -*fuatilia* - ijulishe chaneli hii kuhusu mada mpya
-          - *nyamazisha* - zuia kujulisha kwenye chaneli hii
-
-          *Ondoa kanuni:* `/discourse ondoa [namba ya kanuni]`
-          `([namba ya kanuni]` inapatikana kwa kuandika `/discourse status`)
-
-          *Orodhesha Kanuni:*
-          `/discourse status`
-
-          [Majaribio] Chapisha manuku:* `[n] chapisho la /discourse`
-          Tengeneza mswadajaribio wa mada kwenye discourse zenye machapisho `n` kwenye chaneli hii
-
-          *Msaada:* `/discourse help`
         transcript:
           error: "Hitilafu imetokea wakati wa kutengeneza manukuu, samahani!"
           post_to_discourse: "Bonyeza hapa kuandika taarifa kwenye Discourse kwa kutumia manuku"
@@ -163,4 +145,6 @@ sw:
           %{excerpt}
           ~~~
       flowdock:
+        message_title: "ameandika"
+      groupme:
         message_title: "ameandika"

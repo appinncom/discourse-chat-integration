@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 fi:
   js:
@@ -17,8 +16,6 @@ fi:
       no_providers: "Sinun täytyy sallia jotkut palveluntarjoajat lisäosien asetuksissa"
       channels_with_errors: "Jotkin tämän palveluntuottajan kanavista pettivät viimeksi, kun viestejä lähetettiin. Klikkaa vikaikonia/ikoneita saadaksesi lisää tietoa."
       channel_exception: "Tuntematon virhe tapahtui viimeksi, kun viesti lähetettiin tälle kanavalle. "
-      group_mention_template: "@{{name}} mainittu"
-      group_message_template: "Viestejä käyttäjälle @{{name}}"
       choose_group: "(valitse ryhmä) "
       all_categories: "(kaikki alueet)"
       all_tags: "(kaikki tunnisteet) "
@@ -38,7 +35,7 @@ fi:
       type:
         normal: Normaali
         group_message: Ryhmäviesti
-        group_mention: 'Ryhmämaininta '
+        group_mention: Ryhmämaininta
       filter:
         mute: 'Vaimenna'
         follow: 'Uusi ketju'

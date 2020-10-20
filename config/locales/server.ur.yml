@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 ur:
   site_settings:
@@ -74,22 +73,6 @@ ur:
         not_found:
           tag: "ٹیگ *%{name}* تلاش نہیں کیا جا سکا۔"
           category: "زُمرہ *%{name}* تلاش نہیں کیا جا سکا۔ دستیاب زُمرہ جات: *%{list}*"
-        help: |
-          *نیا اصول:* `/discourse [watch|follow|mute] [category] [tag:name]`
-          (آپ کا اصول کی قسم اور کم از کم ایک زُمرہ یا ٹَیگ کی وضاحت کرنا ضروری ہے)
-          - *watch* – اِس چینل کو نئے ٹاپک اور نئے جوابات پر مطلع کریں
-          - *follow* – نئے ٹاپکس پر اِس چینل کو مطلع کریں
-          - *mute* – اِس چینل پر اطلاعات بلاک کریں
-
-          *اصول ہٹائیں:* `discourse status/`
-          (`[اصول نمبر]` `discourse status/` رَن کر کہ پتہ چلایا جا سکتا ہے)
-
-          *اصولوں کی فہرست:* `discourse status/`
-
-          *[تجرباتی] پوسٹ کی نقل:* `[discourse post [n/`
-          اِس چینل میں آخری `n` پوسٹس پر مشتمل ڈِسکورس میں ایک ڈرافٹ ٹاپک بنائیں
-
-          *مدد:* `discourse help/`
         transcript:
           error: "ٹرانسکرِپٹ بناتے وقت کچھ غلط ہو گیا، معذرت!"
           post_to_discourse: "ٹرانسکرِپٹ کے ساتھ ڈِسکورس پر ایک پوسٹ ڈرافٹ کرنے کیلئے یہاں کلک کریں"
@@ -140,7 +123,7 @@ ur:
 
           <b>مدد:</b> <code>help/</code>
       hipchat:
-        message: '<b>%{user}</b> نے <a href="%{post_url}">%{title}</a> میں پوسٹ کیا۔ '
+        message: <b>%{user}</b> نے <a href="%{post_url}">%{title}</a> میں پوسٹ کیا۔
       mattermost:
         status:
           header: |
@@ -187,4 +170,6 @@ ur:
           %{excerpt}
           ~~~
       flowdock:
+        message_title: "پوسٹ کیا"
+      groupme:
         message_title: "پوسٹ کیا"

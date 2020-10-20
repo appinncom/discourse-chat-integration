@@ -1,14 +1,14 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 gl:
   js:
     chat_integration:
       settings: "Axustes"
+      all_categories: "(todas as categorías)"
       delete_channel: "Eliminar"
       edit_channel: "Editar"
       test_modal:
@@ -21,21 +21,25 @@ gl:
       rule_table:
         filter: "Filtro"
         category: "Categoría"
+        tags: "Etiquetas"
         edit_rule: "Editar"
         delete_rule: "Eliminar"
       edit_channel_modal:
         cancel: "Cancelar"
       edit_rule_modal:
         cancel: Cancelar
+        type: Tipo
         filter: Filtro
         category: Categoría
         group: Grupo
+        tags: Etiquetas
       provider:
         telegram:
           param:
             name:
               title: "Nome"
         discord:
+          title: "Discord"
           param:
             name:
               title: "Nome"

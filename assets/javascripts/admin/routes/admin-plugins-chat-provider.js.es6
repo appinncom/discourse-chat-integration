@@ -1,6 +1,7 @@
+import DiscourseRoute from "discourse/routes/discourse";
 import Group from "discourse/models/group";
 
-export default Discourse.Route.extend({
+export default DiscourseRoute.extend({
   model(params) {
     return Ember.RSVP.hash({
       channels: this.store.findAll("channel", { provider: params.provider }),
@@ -8,16 +9,16 @@ export default Discourse.Route.extend({
         "id",
         params.provider
       ),
-      groups: Group.findAll().then(groups => {
-        return groups.filter(g => !g.get("automatic"));
-      })
-    }).then(value => {
-      value.channels.forEach(channel => {
+      groups: Group.findAll().then((groups) => {
+        return groups.filter((g) => !g.get("automatic"));
+      }),
+    }).then((value) => {
+      value.channels.forEach((channel) => {
         channel.set(
           "rules",
-          channel.rules.map(rule => {
+          channel.rules.map((rule) => {
             rule = this.store.createRecord("rule", rule);
-            rule.channel = channel;
+            rule.set("channel", channel);
             return rule;
           })
         );
@@ -43,6 +44,6 @@ export default Discourse.Route.extend({
 
     refreshProvider() {
       this.refresh();
-    }
-  }
+    },
+  },
 });

@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 pt_BR:
   site_settings:
@@ -73,22 +72,6 @@ pt_BR:
         not_found:
           tag: "A etiqueta *%{name}* não pode ser encontrada."
           category: "A categoria *%{name}* não pode ser encontrada. Categorias disponíveis: *%{list}*"
-        help: |
-          *Nova regra:* `/discourse [watch|follow|mute] [categoria] [etiqueta:nome]`
-          (você precisa especificar um tipo de regra e pelo menos uma categoria ou etiqueta)
-          - *watch* – notificar este canal sobre novos tópicos e novas respostas
-          - *follow* – notificar este canal sobre novos tópicos
-          - *mute* – bloquear notificações para este canal
-
-          *Remover regra:* `/discourse remove [número da regra]`
-          (`[número da regra]` pode ser encontrado executando `/discourse status`)
-
-          *Listar regras:* `/discourse status`
-
-          *[Experimental] Transcrição da postagem:* `/discourse post [n]`
-          Criar um tópico rascunho no discourse contendo as últimas `n` postagens neste canal
-
-          *Ajuda:* `/discourse help`
         transcript:
           error: "Algo deu errado ao construir a transcrição, desculpe!"
           post_to_discourse: "Clique aqui para elaborar uma postagem no Discourse com uma transcrição"
@@ -186,4 +169,6 @@ pt_BR:
           %{excerpt}
           ~~~
       flowdock:
+        message_title: "postado"
+      groupme:
         message_title: "postado"

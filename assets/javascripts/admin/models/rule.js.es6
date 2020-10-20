@@ -1,36 +1,55 @@
+import I18n from "I18n";
 import RestModel from "discourse/models/rest";
 import Category from "discourse/models/category";
 import {
   default as computed,
-  observes
+  observes,
 } from "discourse-common/utils/decorators";
 
 export default RestModel.extend({
-  available_filters: [
-    {
-      id: "watch",
-      name: I18n.t("chat_integration.filter.watch"),
-      icon: "exclamation-circle"
-    },
-    {
-      id: "follow",
-      name: I18n.t("chat_integration.filter.follow"),
-      icon: "circle"
-    },
-    {
-      id: "mute",
-      name: I18n.t("chat_integration.filter.mute"),
-      icon: "times-circle"
+  @computed("channel.provider")
+  available_filters(provider) {
+    const available = [];
+
+    if (provider === "slack") {
+      available.push({
+        id: "thread",
+        name: I18n.t("chat_integration.filter.thread"),
+        icon: "chevron-right",
+      });
     }
-  ],
+
+    available.push(
+      {
+        id: "watch",
+        name: I18n.t("chat_integration.filter.watch"),
+        icon: "exclamation-circle",
+      },
+      {
+        id: "follow",
+        name: I18n.t("chat_integration.filter.follow"),
+        icon: "circle",
+      },
+      {
+        id: "mute",
+        name: I18n.t("chat_integration.filter.mute"),
+        icon: "times-circle",
+      }
+    );
+
+    return available;
+  },
 
   available_types: [
     { id: "normal", name: I18n.t("chat_integration.type.normal") },
     {
       id: "group_message",
-      name: I18n.t("chat_integration.type.group_message")
+      name: I18n.t("chat_integration.type.group_message"),
     },
-    { id: "group_mention", name: I18n.t("chat_integration.type.group_mention") }
+    {
+      id: "group_mention",
+      name: I18n.t("chat_integration.type.group_mention"),
+    },
   ],
 
   category_id: null,
@@ -71,7 +90,7 @@ export default RestModel.extend({
       "category_id",
       "group_id",
       "tags",
-      "filter"
+      "filter",
     ]);
   },
 
@@ -82,7 +101,7 @@ export default RestModel.extend({
       "category_id",
       "group_id",
       "tags",
-      "filter"
+      "filter",
     ]);
-  }
+  },
 });

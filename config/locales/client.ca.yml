@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 ca:
   js:
@@ -17,8 +16,8 @@ ca:
       no_providers: "Heu d'habilitar alguns proveïdors en la configuració del connector"
       channels_with_errors: "Alguns canals d'aquest proveïdor van fallar l'última vegada que es van enviar missatges. Feu clic en la icona o icones d'error per a obtenir més informació."
       channel_exception: "Es va produir un error desconegut la darrera vegada que es va enviar un missatge a aquest canal."
-      group_mention_template: "Mencions de: @ {{name}}"
-      group_message_template: "Missatges a: @{{name}}"
+      group_mention_template: "Mencions de: @ %{name}"
+      group_message_template: "Missatges a: @ %{name}"
       choose_group: "(trieu un grup)"
       all_categories: "(totes les categories)"
       all_tags: "(totes les etiquetes)"

@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 pl_PL:
   js:
@@ -17,8 +16,6 @@ pl_PL:
       no_providers: "Musisz włączyć niektórych dostawców w ustawieniach wtyczki"
       channels_with_errors: "Niektóre kanały dla tego dostawcy nie powiodły się, gdy zostały wysłane ostatnie wiadomości. Kliknij ikonę błędu, aby dowiedzieć się więcej."
       channel_exception: "Wystąpił nieznany błąd, gdy wiadomość została ostatnio wysłana na ten kanał."
-      group_mention_template: "Wzmianki o: @{{name}}"
-      group_message_template: "Wiadomości do: @{{name}}"
       choose_group: "(wybierz grupę)"
       all_categories: "(wszystkie kategorie)"
       all_tags: "(wszystkie tagi)"

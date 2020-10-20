@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 de:
   js:
@@ -17,8 +16,6 @@ de:
       no_providers: "Du musst mindestens ein paar Provider in den Plugin-Einstellungen aktivieren"
       channels_with_errors: "Einige Kanäle für diesen Provider sind das letzte Mal fehlgeschlagen, als Nachrichten geschickt werden. Klicke auf das/die Fehlersymboĺ(e), um mehr zu erfahren."
       channel_exception: "Ein unbekannter Fehler ist aufgetreten als die Nachricht das letzte Mal an diesen Kanal gesendet wurde."
-      group_mention_template: "Erwähnungen von: @{{name}}"
-      group_message_template: "Nachrichten an: @{{name}}"
       choose_group: "(wähle eine Gruppe)"
       all_categories: "(alle Kategorien)"
       all_tags: "(alle Schlagwörter)"

@@ -1,9 +1,8 @@
-# encoding: utf-8
-#
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
 #
 # To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# https://translate.discourse.org/
 
 ro:
   js:
@@ -16,8 +15,6 @@ ro:
       settings: "Setări"
       no_providers: "Trebuie să activezi niște furnizori în setările pluginului"
       channels_with_errors: "Unele canale pentru acest furnizor au eșuat când au fost trimise mesaje ultima dată. Apăsați pictograma(ele) de eroare pentru a afla mai mult."
-      group_mention_template: "Mențiuni despre: @{{name}}"
-      group_message_template: "Mesaj pentru: @{{name}}"
       choose_group: "(selectează un grup)"
       all_categories: "(toate categoriile)"
       all_tags: "(toate etichetele)"

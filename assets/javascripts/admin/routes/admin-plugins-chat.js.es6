@@ -1,4 +1,6 @@
-export default Discourse.Route.extend({
+import DiscourseRoute from "discourse/routes/discourse";
+
+export default DiscourseRoute.extend({
   model() {
     return this.store.findAll("provider");
   },
@@ -6,8 +8,8 @@ export default Discourse.Route.extend({
   actions: {
     showSettings() {
       this.transitionTo("adminSiteSettingsCategory", "plugins", {
-        queryParams: { filter: "chat_integration" }
+        queryParams: { filter: "chat_integration" },
       });
-    }
-  }
+    },
+  },
 });
